@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="pract.css" />
+
+
+
+
+<script src="./pract.js" defer>      </script>
+ 
+
+
+     <script>
+     jahdjasdhasjdhahdasdjhajshddjahsdasjdahsdadhadhahd
+     </script>
+
+
+
+  </head>
+  <body>
+    <div class="colored">
+      <div class="h1_bx">
+        <h1>Generate your color</h1>
+        <p>
+          Just type in the color you want <br />
+          to preview in the text input box
+        </p>
+      </div>
+
+      <div class="inp">
+        <label for="inputed">Color picker</label>
+        <input type="text" id="inputed" placeholder="red" /> <br />
+        <input type="submit" id="sub" onclick="clicked()" />
+      </div>
+
+      <div class="output" id="outPut">
+        <p
+          id="neg"
+          style="
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          "
+        ></p>
+      </div>
+    </div>
+ 
+    <div class="class">
+
+    </div>
+
+ 
+  </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+      function clicked() {
+        let arB = "black";
+        let arr = ["welcome"];
+        let inp = document.getElementById("inputed").value;
+        let outP = document.getElementById("outPut");
+        outP.style.backgroundColor = inp;
+        document.getElementById("neg").innerHTML = arr;
+        document.getElementById("neg").classList.add("show");
+        if (inp.match(arB)) {
+          document.getElementById("neg").style.color = "white";
+        } else {
+          document.getElementById("neg").style.color = "black";
+        }
+      }
+    </script>
+ 
+
+ 
+  </body>
+</html>
